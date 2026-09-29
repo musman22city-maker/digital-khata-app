@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#047857" />
+      <stop offset="50%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGrad)" />
+
+  <!-- Inner Soft Ring Border -->
+  <rect x="18" y="18" width="476" height="476" rx="100" fill="none" stroke="#10b981" stroke-width="4" stroke-opacity="0.35" />
+
+  <!-- Ledger Book Icon -->
+  <g filter="url(#shadow)">
+    <!-- Book Cover Background -->
+    <rect x="106" y="96" width="300" height="320" rx="28" fill="#ffffff" />
+    
+    <!-- Spine binding -->
+    <rect x="106" y="96" width="46" height="320" rx="24" fill="#047857" />
+    <line x1="152" y1="96" x2="152" y2="416" stroke="#064e3b" stroke-width="3" />
+
+    <!-- Ledger Spine Rings -->
+    <circle cx="129" cy="150" r="7" fill="#ffffff" opacity="0.9" />
+    <circle cx="129" cy="210" r="7" fill="#ffffff" opacity="0.9" />
+    <circle cx="129" cy="270" r="7" fill="#ffffff" opacity="0.9" />
+    <circle cx="129" cy="330" r="7" fill="#ffffff" opacity="0.9" />
+
+    <!-- Ledger Content lines -->
+    <!-- Rupees / Currency Badge -->
+    <circle cx="280" cy="180" r="46" fill="url(#goldGrad)" />
+    <text x="280" y="202" font-family="Arial, sans-serif" font-size="52" font-weight="900" fill="#78350f" text-anchor="middle">₨</text>
+
+    <!-- Ledger credit/debit summary lines -->
+    <rect x="186" y="255" width="188" height="16" rx="8" fill="#047857" />
+    <rect x="186" y="287" width="130" height="14" rx="7" fill="#10b981" opacity="0.75" />
+    <rect x="186" y="317" width="160" height="14" rx="7" fill="#e11d48" opacity="0.85" />
+    <rect x="186" y="347" width="90" height="12" rx="6" fill="#64748b" opacity="0.5" />
+  </g>
+
+  <!-- Star / Verified badge on top right -->
+  <circle cx="396" cy="116" r="28" fill="url(#goldGrad)" filter="url(#shadow)" />
+  <path d="M396 98 L401 110 L414 111 L404 120 L407 133 L396 126 L385 133 L388 120 L378 111 L391 110 Z" fill="#78350f" />
+</svg>

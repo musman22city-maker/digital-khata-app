@@ -1,0 +1,8 @@
+{
+  "name": "Digital Khata - اسمارٹ حساب کتاب",
+  "description": "پریمیم اینڈرائیڈ اسٹائل ڈیجیٹل کھاتہ برائے لین دین، کسٹمر حساب کتاب، رسید بل اور پی ڈی ایف/ایکسل رپورٹس",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
